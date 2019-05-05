@@ -143,9 +143,10 @@ function w3_close() {
          statoapertura = "Il negozio è aperto";
          map.data.overrideStyle(feature, {
          //visible: false,
-         icon: {
-url: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+       icon: {
+url: "res/ico/beer_bottle.png"
 }
+
        });
        }
 
@@ -153,10 +154,9 @@ url: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
                 document.getElementById("link1").style.display = "none";
                 statoapertura = "Il negozio è chiuso";
                 map.data.overrideStyle(feature, {
-                //visible: false,
-                icon: {
-      url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
-    }
+                  icon: {
+           url: "res/ico/closed.png"
+           }
               });
               }
 
