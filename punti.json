@@ -6,7 +6,7 @@
       "properties": {
       	"indirizzo": "Bangla prova uno",
       	"apertura": "08:00",
-      	"chiusura": "24:00",
+      	"chiusura": "09:00",
         "segnalazioni": "0"
       },
       "geometry": {
@@ -95,12 +95,12 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-           11.324111, 
+           11.324111,
            44.495208
         ]
       }
     }
 
-    
+
   ]
 }

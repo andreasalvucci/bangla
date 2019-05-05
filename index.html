@@ -88,7 +88,7 @@
             <p id="statoapertura"><p>
           </div>
           <div class="card-action">
-            <a class="w3-text-red" id="link1" href="#">ci vado a piedi</a>
+            <a class="w3-text-red" id="link1" href="#">Ottieni indicazioni</a>
             <a class="w3-text-red" id="link2" href="#">no, è chiuso</a>
           </div>
         </div>
@@ -138,13 +138,25 @@ function w3_close() {
        var aperturaparse = DateTime.fromISO(checkapertura);
        var chiusuraparse = DateTime.fromISO(checkchiusura);
 
-       if(adesso<chiusuraparse && adesso>aperturaparse)
-                statoapertura = "Il negozio è aperto";
+       if(adesso<chiusuraparse && adesso>aperturaparse){
+         document.getElementById("link1").style.display = "none";
+         statoapertura = "Il negozio è aperto";
+         map.data.overrideStyle(feature, {
+         //visible: false,
+         icon: {
+url: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+}
+       });
+       }
+
               else{
                 document.getElementById("link1").style.display = "none";
                 statoapertura = "Il negozio è chiuso";
                 map.data.overrideStyle(feature, {
-                visible: false
+                //visible: false,
+                icon: {
+      url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+    }
               });
               }
 
