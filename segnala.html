@@ -1,0 +1,71 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+	#bottoneinvio{
+		text-align: center;
+	}
+</style>
+<body class="w3-green">
+
+<form class="w3-container w3-card-4 w3-red" action="ricevisegnalazione.php" method="post">
+  <h2>Segnalaci un Bangla</h2>
+  <p>Il tuo aiuto &egrave; molto prezioso per la comunit&agrave; e per gli sviluppatori, chiedi al bangla gli orari!</p>
+
+  <p><label>Geolocalizzati</label>
+  <div id="bottonegeo" class="w3-button w3-green w3-ripple">
+  Bottone
+  </div>
+  <p><label>Orario di Apertura (facoltativo)</label>
+  <input class="w3-input w3-border" name="apertura" type="time"></p>
+  <p><label>Orario di Chiusura (obbligatorio)</label>
+  <input class="w3-input w3-border" name="chiusura"  type="time"></p>
+  <input type="hidden" id="coordinates" name="coordinates"  value="">
+
+  <p id="prova">Non Geolocalizzato</p>
+
+  <script type="text/javascript">
+
+  var par = document.getElementById('prova');
+  var geolocalizzato = false;
+  var bottone = document.getElementById('bottonegeo');
+
+  bottone.addEventListener("click", function(event){
+  	geolocalizza();
+  });
+
+
+  	function geolocalizza(){
+  		var coordinate;
+  		 if (navigator.geolocation) {
+		    coordinate=navigator.geolocation.getCurrentPosition(showPosition);
+		    geolocalizzato=true;
+
+		  } else { 
+		   coordinate = "Geolocation is not supported by this browser.";
+		  }
+		  console.log(coordinate);
+		}
+
+		function showPosition(position) {
+  coordinate =position.coords.latitude + 
+  " " + position.coords.longitude; 
+
+  par.textContent = "Geolocalizzato: " + coordinate;
+  document.getElementById('coordinates').value=coordinate;
+  document.getElementById('invia').disabled=false;
+}
+		
+  	
+  </script>
+  
+
+<input type="submit" id="invia" disabled>
+</form>
+
+
+
+</body>
+</html> 

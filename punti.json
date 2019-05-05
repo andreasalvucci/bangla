@@ -1,0 +1,106 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+      	"indirizzo": "Bangla prova uno",
+      	"apertura": "08:00",
+      	"chiusura": "24:00",
+        "segnalazioni": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.341710090637207,
+          44.49717877411428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+      	"indirizzo": "Bangla prova due",
+      	"apertura": "08:00",
+      	"chiusura": "23:00",
+        "segnalazioni": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.33840560913086,
+          44.499015397367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+      	"indirizzo": "Bangla prova tre",
+      	"apertura": "08:00",
+      	"chiusura": "21:00",
+        "segnalazioni": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.336603164672852,
+          44.49505127986454
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "indirizzo": "Bangla prova quattro",
+        "apertura": "08:00",
+        "chiusura": "21:00",
+        "segnalazioni": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.326632,
+          44.501292
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "indirizzo": "Bangla prova cinque",
+        "apertura": "08:00",
+        "chiusura": "21:00",
+        "segnalazioni": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+           11.328606,
+           44.498751
+        ]
+      }
+    },
+
+     {
+      "type": "Feature",
+      "properties": {
+        "indirizzo": "Bangla prova sei",
+        "apertura": "08:00",
+        "chiusura": "21:00",
+        "segnalazioni": "0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+           11.324111, 
+           44.495208
+        ]
+      }
+    }
+
+    
+  ]
+}
