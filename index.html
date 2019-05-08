@@ -192,6 +192,23 @@ url: "res/ico/beer_bottle.png"
                 var collegamento ="https://www.google.com/maps/search/?api=1&query="+ coordinates.get();
                 window.location= collegamento;
               });
+              checkapertura = event.feature.getProperty("apertura");
+              checkchiusura = event.feature.getProperty("chiusura");
+
+              aperturaparse = DateTime.fromISO(checkapertura);
+              chiusuraparse = DateTime.fromISO(checkchiusura);
+              adesso = DateTime.local();
+              if(adesso<chiusuraparse && adesso>aperturaparse){
+                document.getElementById("link1").style.display = "none";
+                statoapertura = "Il negozio è aperto";
+              }
+
+                     else{
+                       document.getElementById("link1").textContent = "Portami comunque"
+                       statoapertura = "Il negozio è chiuso";
+                     }
+
+
 
 
               var contenutocarta = "Orario di apertura: " + event.feature.getProperty("apertura") +
