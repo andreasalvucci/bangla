@@ -203,11 +203,12 @@ url: "res/ico/beer_bottle.png"
               adesso = DateTime.local();
               if(adesso<chiusuraparse && adesso>aperturaparse){
                 document.getElementById("link1").style.display = "block";
+                 document.getElementById("link1").textContent = "Ottieni Indicazioni"
                 statoapertura = "Il negozio è aperto";
               }
 
                      else{
-                       document.getElementById("link1").textContent = "Portami comunque"
+                       document.getElementById("link1").textContent = "Portami comunque";
                        statoapertura = "Il negozio è chiuso";
                      }
 
