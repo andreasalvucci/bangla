@@ -132,7 +132,7 @@ function w3_close() {
 
 
 
-    map.data.loadGeoJson(caricaJSON(), {},
+    map.data.loadGeoJson('punti.json', {},
       function(features) {
       console.log("loadGeoJson callback " + features.length);
       map.data.forEach(function(feature) {
