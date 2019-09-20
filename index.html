@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript" src="js/loadJson.js"></script>
     <title>Bangla Bodlogna</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
@@ -128,7 +129,8 @@ function w3_close() {
         });
 
 
-    map.data.loadGeoJson('punti.json', {},
+
+    map.data.loadGeoJson(caricaJSON(), {},
       function(features) {
       console.log("loadGeoJson callback " + features.length);
       map.data.forEach(function(feature) {
