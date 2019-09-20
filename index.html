@@ -142,7 +142,7 @@ function w3_close() {
        var chiusuraparse = DateTime.fromISO(checkchiusura);
 
        if(adesso<chiusuraparse && adesso>aperturaparse){
-         document.getElementById("link1").style.display = "none";
+         document.getElementById("link1").style.display = "block";
          statoapertura = "Il negozio è aperto";
          map.data.overrideStyle(feature, {
          //visible: false,
