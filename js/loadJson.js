@@ -1,3 +1,3 @@
 function caricaJSON(){
-  $.get("localhost:80");
+    $.get("localhost:80");
 }
