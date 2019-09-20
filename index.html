@@ -91,8 +91,7 @@
             <p id="statoapertura"><p>
           </div>
           <div class="card-action">
-            <a class="w3-text-red" id="link1" href="#">Ottieni indicazioni</a>
-            <a class="w3-text-red" id="link2" href="#">no, è chiuso</a>
+            <a class="w3-text-red" id="link1" href="#">Ottieni comunque indicazioni</a>
           </div>
         </div>
       </div>
@@ -203,7 +202,7 @@ url: "res/ico/beer_bottle.png"
               chiusuraparse = DateTime.fromISO(checkchiusura);
               adesso = DateTime.local();
               if(adesso<chiusuraparse && adesso>aperturaparse){
-                document.getElementById("link1").style.display = "none";
+                document.getElementById("link1").style.display = "block";
                 statoapertura = "Il negozio è aperto";
               }
 
